@@ -1,0 +1,68 @@
+@use 'base' as *;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  line-height: $header-height;
+  height: $header-height;
+  box-shadow: 0 2px 4px 0 #0000000d;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.logo {
+  width: 40;
+  height: 40;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color-dark;
+  transition: color 0.3s ease;
+
+  &.is-active {
+    color: $color-accent;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      border-radius: 2px;
+      background-color: $color-accent;
+    }
+  }
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.nav__item {
+  margin-left: 20px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
