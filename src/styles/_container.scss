@@ -3,26 +3,26 @@
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 46px;
-  column-gap: 48px;
-  max-width: 1024px;
+  row-gap: $container-row-gap;
+  column-gap: $container-column-gap;
+  max-width: $container-max-width;
   margin: 0 auto;
-  padding: 50px 40px;
+  padding: $container-padding-vertical $container-padding-horizontal;
 }
 
-@media (min-width: 488px) {
+@media (min-width: $breakpoint-sm) {
   .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-md) {
   .container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: $breakpoint-lg) {
   .container {
     grid-template-columns: repeat(4, 1fr);
   }

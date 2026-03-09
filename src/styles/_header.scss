@@ -5,14 +5,14 @@
   justify-content: space-between;
   line-height: $header-height;
   height: $header-height;
-  box-shadow: 0 2px 4px 0 #0000000d;
+  box-shadow: 0 2px 4px 0 $color-shadow;
   align-items: center;
-  padding: 0 50px;
+  padding: 0 $header-padding-horizontal;
 }
 
 .logo {
-  width: 40;
-  height: 40;
+  width: $logo-size;
+  height: $logo-size;
 }
 
 .nav__list {
@@ -26,14 +26,14 @@
   position: relative;
   display: flex;
   align-items: center;
-  font-family: Roboto, sans-serif;
-  font-size: 12px;
-  font-weight: 500;
+  font-family: $font-family;
+  font-size: $font-size-sm;
+  font-weight: $font-weight-medium;
   white-space: nowrap;
   text-decoration: none;
   text-transform: uppercase;
   color: $color-dark;
-  transition: color 0.3s ease;
+  transition: color $transition-duration ease;
 
   &.is-active {
     color: $color-accent;
@@ -44,8 +44,8 @@
       bottom: 0;
       left: 0;
       right: 0;
-      height: 4px;
-      border-radius: 2px;
+      height: $nav-active-indicator-height;
+      border-radius: $nav-active-indicator-radius;
       background-color: $color-accent;
     }
   }
@@ -56,7 +56,7 @@
 }
 
 .nav__item {
-  margin-left: 20px;
+  margin-left: $nav-item-spacing;
 
   &:first-child {
     margin-left: 0;

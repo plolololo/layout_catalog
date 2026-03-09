@@ -47,6 +47,34 @@ $card-button-border-radius: 5px;
 
 // Header - layout
 $header-height: 60px;
+$header-padding-horizontal: 50px;
+$color-shadow: #0000000d;
+
+// Logo
+$logo-size: 40px;
+
+// Nav
+$nav-item-spacing: 20px;
+$nav-active-indicator-height: 4px;
+$nav-active-indicator-radius: 2px;
+
+// Container - layout
+$container-max-width: 1024px;
+$container-padding-vertical: 50px;
+$container-padding-horizontal: 40px;
+$container-row-gap: 46px;
+$container-column-gap: 48px;
+
+// Breakpoints
+$breakpoint-sm: 488px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+
+// Transitions
+$transition-duration: 0.3s;
+
+// Card - hover
+$card-hover-scale: 1.2;
 
 // Stars
 $star-size: 16px;
