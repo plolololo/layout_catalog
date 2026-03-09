@@ -2,6 +2,7 @@
 
 .container {
   display: grid;
+  justify-content: center;
   grid-template-columns: $card-width;
   gap: $container-row-gap $container-column-gap;
   max-width: $container-max-width;
