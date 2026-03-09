@@ -10,14 +10,6 @@
   padding-top: $card-padding-top;
   transition: transform 0.3s ease;
 
-  &:hover {
-    transform: scale(1.2);
-
-    .card__title {
-      color: $color-title-hover;
-    }
-  }
-
   &__title {
     font-weight: $font-weight-medium;
     font-size: $font-size-sm;
@@ -106,6 +98,11 @@
     &:hover {
       color: $color-accent;
       background-color: $color-white;
+      transform: scale(1.2);
+
+      .card__title {
+        color: $color-title-hover;
+      }
     }
   }
 }

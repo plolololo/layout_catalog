@@ -3,8 +3,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  row-gap: 46px;
-  column-gap: 48px;
+  gap: 46px 48px;
   width: 1024px;
   margin: 0 auto;
   padding: 50px 40px;
